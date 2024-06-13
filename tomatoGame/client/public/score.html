@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Board</title>
+    <link rel="stylesheet" href="../src/styles/score.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="score_box">
+        <div class="buttons">
+          <button class="NG_btn" id="NG_btn">New Game</button>
+          <button class="LO_btn" id="LO_btn">Log Out</button>
+        </div>
+        <div class="score">
+          Your Score <br />
+          <span id="score">0</span>
+        </div>
+        <div>
+          <img src="../src/assets/tomato_games_cover.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <script src="../src/scripts/utils/checkAuthentication.js"></script>
+    <script src="../src/scripts/utils/logoutUtil.js"></script>
+    <script src="../src/scripts/score.js"></script>
+  </body>
+</html>

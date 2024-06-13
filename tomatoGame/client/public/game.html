@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tomato Game</title>
+    <link rel="stylesheet" href="../src/styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="board">
+        <div class="navbar">
+          <ul>
+            <li>
+              <span id="timer-name">Time Ends :</span>
+              <span id="timer"> - </span>
+            </li>
+            <li>Lives :<span id="lifes"> - </span></li>
+            <li>Points : <span id="points"> - </span></li>
+            <li><span id="answer-status"></span></li>
+          </ul>
+          <div class="topnav_right">
+            <button id="str_btn">Start Game</button>
+            <button id="LO_btn">Log Out</button>
+          </div>
+        </div>
+        <img
+          id="problem"
+          src="https://www.sanfoh.com/uob//tomato/data/te398cecaf9482aad2d67d47894n286.png"
+        />
+        <div class="choice" id="result">
+          <h1>Select the missing digit :</h1>
+          <button class="btn" onclick="showValue(0)">0</button>
+          <button class="btn" onclick="showValue(1)">1</button>
+          <button class="btn" onclick="showValue(2)">2</button>
+          <button class="btn" onclick="showValue(3)">3</button>
+          <button class="btn" onclick="showValue(4)">4</button>
+          <button class="btn" onclick="showValue(5)">5</button>
+          <button class="btn" onclick="showValue(6)">6</button>
+          <button class="btn" onclick="showValue(7)">7</button>
+          <button class="btn" onclick="showValue(8)">8</button>
+          <button class="btn" onclick="showValue(9)">9</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../src/scripts/utils/checkAuthentication.js"></script>
+    <script src="../src/scripts/utils/logoutUtil.js"></script>
+    <script src="../src/scripts/game.js"></script>
+  </body>
+</html>

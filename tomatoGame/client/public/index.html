@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="../src/styles/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form_box">
+        <div class="button_box">
+          <div id="btn"></div>
+          <button type="button" class="toggle_btn" onclick="login()">
+            Log In
+          </button>
+          <button type="button" class="toggle_btn" onclick="register()">
+            Register
+          </button>
+        </div>
+        <div class="txt">
+          <h3>Welcome to The Tomato Game</h3>
+        </div>
+        <form
+          id="login"
+          class="input_group"
+          onsubmit="return loginUser()"
+          method="post"
+        >
+          <p>Log In to Start Playing.</p>
+          <input
+            type="text"
+            id="l_username"
+            name="l_username"
+            placeholder="User Name"
+          />
+          <input
+            type="password"
+            id="l_password"
+            name="l_password"
+            placeholder="Enter Password"
+          />
+          <button type="submit" id="login_btn">Log In</button>
+        </form>
+        <form
+          id="register"
+          class="input_group"
+          onsubmit="return registerUser()"
+          method="POST"
+        >
+          <p>Please Register Here Before You Log In.</p>
+          <input
+            type="text"
+            id="r_username"
+            name="r_username"
+            placeholder="User Name"
+          />
+          <input
+            type="password"
+            id="r_password"
+            name="r_password"
+            placeholder="Password"
+          />
+          <input
+            type="password"
+            id="r_confirmPassword"
+            name="r_confirmPassword"
+            placeholder="Confirm Password"
+          />
+          <button type="submit" id="submit_btn">Register</button>
+        </form>
+      </div>
+    </div>
+    <script src="../src/scripts/auth.js"></script>
+  </body>
+</html>
